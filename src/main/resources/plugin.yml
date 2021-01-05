@@ -1,9 +1,11 @@
-name: ${project.name}
-main: ${project.groupId}.${project.artifactId}.${project.name}
-version: ${project.version}
-api-version: ${project.apiVersion}
-description: ${project.description}
+name: CreateYourOwnMenus
+main: me.xhawk87.CreateYourOwnMenus.CreateYourOwnMenus
+version: 0.7
+api-version: 1.16
+description: A plugin to allow server owners to design and create their own menus in-game
 softdepend: [Vault]
+author: XHawk87
+load: POSTWORLD
 
 commands:
   menu:

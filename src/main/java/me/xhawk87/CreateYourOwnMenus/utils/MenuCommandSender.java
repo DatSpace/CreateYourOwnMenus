@@ -27,6 +27,7 @@ import org.bukkit.permissions.PermissionAttachmentInfo;
 import org.bukkit.plugin.Plugin;
 
 import java.util.Set;
+import java.util.UUID;
 
 /**
  * @author XHawk87
@@ -52,6 +53,16 @@ public class MenuCommandSender implements ConsoleCommandSender {
     }
 
     @Override
+    public void sendMessage(UUID uuid, String s) {
+
+    }
+
+    @Override
+    public void sendMessage(UUID uuid, String[] strings) {
+
+    }
+
+    @Override
     public Server getServer() {
         return console.getServer();
     }
@@ -59,6 +70,11 @@ public class MenuCommandSender implements ConsoleCommandSender {
     @Override
     public String getName() {
         return console.getName();
+    }
+
+    @Override
+    public Spigot spigot() {
+        return null;
     }
 
     @Override
@@ -154,5 +170,10 @@ public class MenuCommandSender implements ConsoleCommandSender {
     @Override
     public void sendRawMessage(String message) {
         player.sendRawMessage(message);
+    }
+
+    @Override
+    public void sendRawMessage(UUID uuid, String s) {
+
     }
 }

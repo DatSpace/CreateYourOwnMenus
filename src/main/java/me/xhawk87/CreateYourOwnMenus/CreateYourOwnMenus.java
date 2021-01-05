@@ -45,12 +45,6 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-/**
- * A plugin to allow server owners to design and create their own menus
- * in-game
- *
- * @author XHawk87
- */
 public class CreateYourOwnMenus extends JavaPlugin {
 
     // Store menus by their ID
